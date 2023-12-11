@@ -1,0 +1,121 @@
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #171313;
+    border: none;
+}
+
+input, label {
+    display: inline-block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+a{
+    color: rgb(40, 19, 227);
+}
+
+body{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 5vh; /*view heigth -> 5% da tela*/
+    background-image: url(https://img.freepik.com/psd-gratuitas/interior-da-sala-de-emergencia-moderna-com-estacao-de-enfermeiras-vazia-generative-ai_587448-2137.jpg?w=1380&t=st=1701734106~exp=1701734706~hmac=c8434a84b50a45beb579894fd6b30a93eea868ae5d39bdca49e6dc8fde1e158c);
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+/* form */
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(189, 223, 232);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /*adpatada ao elemento root*/
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px rgb(23, 23, 23);
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    width:300px
+}
+
+input:focus{
+    border-color: rgb(239, 77, 210);
+}
+
+input [type="submit"]{
+    background-color: rgb(232, 20, 154);
+    color:rgb(230, 226, 233);
+    border: none;
+    border-radius: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* validaçoes */
+.error-validation {
+    color: rgb(194, 12, 12);
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template{
+    display: none;
+}
+
+
